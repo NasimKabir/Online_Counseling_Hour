@@ -1,5 +1,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
+<center>
+<h1>Department Of SWE</h1>
+<h2>Class Schedule</h2>
+</center>
 <table class="table table-striped" border="1">
 		<tr>
 			<th>Day</th>

@@ -9,7 +9,7 @@ import com.spirngweb.model.TeacherCounseling;
 public interface TeacherService {
 	public List<TeacherCounseling> getList();
 
-	public boolean Insert(TeacherCounseling teacherCounseling);
+	public boolean addCounseling(TeacherCounseling teacherCounseling);
 	public List<TeacherCounseling> counsilinglist(String t_initial_id);
-	public boolean update(TeacherCounseling teacherCounseling);
+	public boolean updateCounseling(TeacherCounseling teacherCounseling);
 }

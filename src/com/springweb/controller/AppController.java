@@ -47,23 +47,25 @@ public class AppController {
 		if (result.hasErrors()) {
 			return "admininitializeteacher";
 		}
-		teacherServiceImpl.Insert(teacherCounseling);
+		teacherServiceImpl.addCounseling(teacherCounseling);
 		return "success";
 	}
+	
 // display update form
-	@RequestMapping(value = "/updatecounseling", method = RequestMethod.GET)
+	@RequestMapping(value = "/updatecounseling")
 	public String update() {
 
 		return "updatecounseling";
 	}
+	
 // update information and show success
-	@RequestMapping(value = "/success", method = RequestMethod.POST)
+	@RequestMapping(value = "/success")
 	public String Updateecounseling(@ModelAttribute("teacher") TeacherCounseling teacherCounseling,
 			BindingResult result) {
 		if (result.hasErrors()) {
 			return "updatecounseling";
 		}
-		teacherServiceImpl.update(teacherCounseling);
+		teacherServiceImpl.updateCounseling(teacherCounseling);
 		return "success";
 	}
 }

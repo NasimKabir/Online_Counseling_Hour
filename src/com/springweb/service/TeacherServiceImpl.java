@@ -29,8 +29,8 @@ public class TeacherServiceImpl implements TeacherService {
 	}
 
 	@Override
-	public boolean Insert(TeacherCounseling teacherCounseling) {
-		return teacherdao.Insert(teacherCounseling);
+	public boolean addCounseling(TeacherCounseling teacherCounseling) {
+		return teacherdao.addCounseling(teacherCounseling);
 	}
 
 	@Override
@@ -40,9 +40,9 @@ public class TeacherServiceImpl implements TeacherService {
 	}
 
 	@Override
-	public boolean update(TeacherCounseling teacherCounseling) {
+	public boolean updateCounseling(TeacherCounseling teacherCounseling) {
 	
-		return teacherdao.update(teacherCounseling);
+		return teacherdao.updateCounseling(teacherCounseling);
 	}
 
 	

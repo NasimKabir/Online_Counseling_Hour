@@ -33,7 +33,7 @@ public class TeacherDaoCounselingImpl implements TeacherCounselingDao {
 	}
 
 	@Override
-	public boolean Insert(TeacherCounseling teacherCounseling) {
+	public boolean addCounseling(TeacherCounseling teacherCounseling) {
 		BeanPropertySqlParameterSource param = new BeanPropertySqlParameterSource(teacherCounseling);
 		String sql = "insert into teacher(day,t_initial_id,time1,time2,time3,time4,time5,time6) values(:day,:t_initial_id,:time1,:time2,:time3,:time4,:time5,:time6)";
 		return jdbc.update(sql, param) == 1;
@@ -47,7 +47,7 @@ public class TeacherDaoCounselingImpl implements TeacherCounselingDao {
 	}
 
 	@Override
-	public boolean update(TeacherCounseling teacherCounseling) {
+	public boolean updateCounseling(TeacherCounseling teacherCounseling) {
 		BeanPropertySqlParameterSource param = new BeanPropertySqlParameterSource(teacherCounseling);
 		String sql = "update teacher set time1=:time1,time2=:time2,time3=:time3,time4=:time4,time5=:time5,time6=:time6 where day=:day and t_initial_id=:t_initial_id";
 		return jdbc.update(sql, param) == 1;

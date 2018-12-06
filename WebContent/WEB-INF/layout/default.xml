@@ -46,7 +46,7 @@
       <definition name="updatecounseling" extends="main">
 			      <put-attribute name="title" value="Teacher update counseling" />
 			      <put-attribute name="content" value="/WEB-INF/tiles/updatecounseling.jsp" />
-      </definition>
+      </definition> 
       <definition name="adminViewUserList" extends="main">
 			      <put-attribute name="title" value="Admin show all user list" />
 			      <put-attribute name="content" value="/WEB-INF/tiles/adminViewUserList.jsp" />

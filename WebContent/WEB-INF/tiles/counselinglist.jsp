@@ -3,7 +3,7 @@
 <h1>Department Of SWE</h1>
 <h2>Class Schedule</h2>
 </center>
-<table class="table table-striped" border="1">
+<%-- <table class="table table-striped" border="1">
 		<tr>
 			<th>Day</th>
 			<th>Teacher Initial</th>
@@ -24,7 +24,8 @@
 				<td><c:out value="${row.time4}"></c:out></td>
 				<td><c:out value="${row.time5}"></c:out></td>
 				<td><c:out value="${row.time6}"></c:out></td>
+				<td><a href="${pageContext.request.contextPath}/updatecounseling">Update</a></td>
 			</tr>
 		</c:forEach>
-	</table>
+	</table> --%>
 <br>

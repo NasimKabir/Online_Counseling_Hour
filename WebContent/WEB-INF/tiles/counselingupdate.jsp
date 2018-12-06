@@ -1,11 +1,11 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <div class="col-md-6 col-md-offset-3">
 	<form:form method="post"
-		action="${pageContext.request.contextPath}/itializesuccess" modelAttribute="counselingform">
+		action="${pageContext.request.contextPath}/initializesuccess" modelAttribute="counselingform">
 		<fieldset>
 			<div class="form-group">
-				<label for="sel1">Select Day:</label> <select class="form-control"
-					id="select" name="day">
+				<label for="sel1">Select Day:</label>
+				 <select class="form-control" name="day">
 					<option>select</option>
 					<option>Saturday</option>
 					<option>Sunday</option>

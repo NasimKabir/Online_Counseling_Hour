@@ -3,6 +3,7 @@ package com.springweb.dao;
 import java.util.List;
 
 import javax.sql.DataSource;
+import javax.websocket.Session;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
@@ -52,5 +53,7 @@ public class TeacherDaoCounselingImpl implements TeacherCounselingDao {
 		String sql = "update teacher set time1=:time1,time2=:time2,time3=:time3,time4=:time4,time5=:time5,time6=:time6 where day=:day and t_initial_id=:t_initial_id";
 		return jdbc.update(sql, param) == 1;
 	}
+
+	
 
 }

@@ -14,13 +14,8 @@ public class TeacherServiceImpl implements TeacherService {
 	public TeacherServiceImpl() {
 	System.out.println("teacher service successfully done");
 	}
-
-	private TeacherDaoCounselingImpl teacherdao;
-
 	@Autowired
-	public void setTeacherdao(TeacherDaoCounselingImpl teacherdao) {
-		this.teacherdao = teacherdao;
-	}
+	private TeacherDaoCounselingImpl teacherdao;
 
 	@Override
 	public List<TeacherCounseling> getList() {
@@ -45,5 +40,6 @@ public class TeacherServiceImpl implements TeacherService {
 		return teacherdao.updateCounseling(teacherCounseling);
 	}
 
+	
 	
 }
